@@ -2,12 +2,12 @@
 
 namespace Leitura_de_dados
 {
-    class Program
+     public class Program
     {
         static void Main(string[] args)
         {
             Console.WriteLine("Entre com seu nome completo:");
-            string  nome = Console.ReadLine();
+            string nome = Console.ReadLine();
 
             Console.WriteLine("Quantos Quartos tem sua casa?");
             int quartos = int.Parse(Console.ReadLine());
@@ -24,12 +24,15 @@ namespace Leitura_de_dados
             Console.Clear();
 
             Console.WriteLine("Seus dados são:");
-            Console.WriteLine("Seu nome é "+nome);
-            Console.WriteLine("Sua casa tem " +quartos+ " quarto(s)");
-            Console.WriteLine("O valor do produto é: R$"+ produto);
-            Console.WriteLine("Seu ultimo nome é: "+unome);
-            Console.WriteLine("Sua idade é: "+idade);
-            Console.WriteLine("Sua altura é: "+altura);
+            Console.WriteLine($"Seu nome é: {nome}");
+            Console.WriteLine($"Sua casa tem {quartos} quarto(s)");
+            Console.WriteLine($"O valor do produto é: R${produto}");
+            Console.WriteLine($"Seu ultimo nome é: {unome}");
+            Console.WriteLine($"Sua idade é: {idade}");
+            Console.WriteLine($"Sua altura é: {altura}");
+
+
+
 
         }
     }
